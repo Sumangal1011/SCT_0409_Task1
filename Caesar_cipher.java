@@ -3,7 +3,8 @@ public class Caesar_cipher {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Select your operation: ");
+        System.out.println("*** CAESAR CIPHER  ***");
+        System.out.println("Select your Option: ");
         System.out.println("1. Encrypt");
         System.out.println("2. Decrypt");
         int operation = sc.nextInt(); // Op is a variable, which stores the selection option
@@ -12,10 +13,12 @@ public class Caesar_cipher {
             case 1 -> {
                 System.out.print("Enter the Message to Encrypt: ");
                 String txt = sc.nextLine();
-                System.out.print("\nEnter the key: ");
+                System.out.print("Enter the key: ");
                 int key = sc.nextInt();
                 String encryptedMessage = encrypt(txt,key);
                 System.out.println("Encrypted Message is:- " + encryptedMessage);
+                System.out.println(" ");
+                System.out.println("*** EXECTION SUCCESSFUL ***");
             }
             case 2 ->{
                 System.out.print("Enter the encrypted text: ");
@@ -23,7 +26,9 @@ public class Caesar_cipher {
                 System.out.print("Enter the key to decrypt: ");
                 int key2=sc.nextInt();
                 String decryptedMessage=decrypt(c_txt,key2);
-                System.out.print("Your Mssage is: " + decryptedMessage);
+                System.out.println("Your Mssage is: " + decryptedMessage);
+                System.out.println(" ");
+                System.out.println("*** Executed Successfully ***");
             }            
         }
      }
