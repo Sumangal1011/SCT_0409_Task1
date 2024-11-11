@@ -10,7 +10,7 @@ public class Caesar_cipher {
         int operation = sc.nextInt(); // Op is a variable, which stores the selection option
         sc.nextLine();
         switch (operation) {
-            case 1 -> {
+            case 1: {
                 System.out.print("Enter the Message to Encrypt: ");
                 String txt = sc.nextLine();
                 System.out.print("Enter the key: ");
@@ -19,8 +19,9 @@ public class Caesar_cipher {
                 System.out.println("Encrypted Message is:- " + encryptedMessage);
                 System.out.println(" ");
                 System.out.println("*** EXECTION SUCCESSFUL ***");
+                break;
             }
-            case 2 ->{
+            case 2:{
                 System.out.print("Enter the encrypted text: ");
                 String c_txt=sc.nextLine();
                 System.out.print("Enter the key to decrypt: ");
@@ -29,6 +30,7 @@ public class Caesar_cipher {
                 System.out.println("Your Mssage is: " + decryptedMessage);
                 System.out.println(" ");
                 System.out.println("*** Executed Successfully ***");
+                break;
             }            
         }
      }
